@@ -1,4 +1,6 @@
-## Values
+## Scala Cheatsheet
+
+### Values
 
 Scala immutable names
 
@@ -26,7 +28,7 @@ A value could not be reassigned, but can contain a pointer to a mutable object:
     mhm += (2 -> "two")      // works fine, because  +=  is a member of mutable HashMap class
 ```
 
-## Variables
+### Variables
 
 Scala names that can vary, same as C++ variable
 
@@ -39,7 +41,7 @@ Scala names that can vary, same as C++ variable
     l = l.drop(2)  // fine
 ```
 
-## Functions
+### Functions
 
 Callable things
 
@@ -58,7 +60,7 @@ Callable things
     def two = 2                       // no parentheses
 ```
 
-### Anonymous Function
+#### Anonymous Function
 
 Functions with no name
 
@@ -72,7 +74,7 @@ Functions with no name
     2*               // same as _*2 or 2*_, *2 won't work since * is a postfix operator returning a function
 ```
 
-### Type of Functions
+#### Type of Functions
 
 A function `(a1: T1, ... , an: Tn): T` has the type `(T1, ... , Tn) => T`:
 
@@ -81,7 +83,7 @@ A function `(a1: T1, ... , an: Tn): T` has the type `(T1, ... , Tn) => T`:
     def add(a: Double, b: Double) = a+b  // has the type (Double, Double) => Double
 ```
 
-### Higher Order Functions
+#### Higher Order Functions
 
 Are functions that return functions:
 
@@ -99,7 +101,7 @@ Are functions that return functions:
     def f(a: Int): Int => Int = a*        // same function
 ```
 
-### Currying
+#### Currying
 
 Converting a function with multiple arguments into a function with a
 single argument that returns another function:
@@ -109,7 +111,7 @@ single argument that returns another function:
     def f(a: Int)(b: Int): Int // curried version (type is Int => Int => Int)
 ```
 
-## Evaluation Rules
+### Evaluation Rules
 
 - Call by value: evaluates the function arguments before calling the function
 - Call by name: evaluates the function first, and then evaluates the arguments if need be
@@ -123,4 +125,3 @@ single argument that returns another function:
     def square(x: => Double) // call by name
     def myFct(bindings: Int*) = { ... } // bindings is a sequence of int, containing a varying # of arguments
 ```
-

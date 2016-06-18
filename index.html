@@ -6,8 +6,8 @@
     <title>Angellandros Projects Wiki by angellandros</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -23,64 +23,37 @@
 
       </header>
       <section>
-        <h3>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
-
-<p>My name is Muhammad-Ali A'rabi. I am a mathematician, data scientist, software developer, and indie game developer. I will give a list of my projects here, and their github link, if any.</p>
+        <p>ΑΓΕΩΜΕΤΡΗΤΟΣ ΜΗΔΕΙΣ ΕΙΣΙΤΩ</p>
 
 <h3>
-<a id="mathematics-and-linguistics" class="anchor" href="#mathematics-and-linguistics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mathematics and Linguistics</h3>
+<a id="scala-wars" class="anchor" href="#scala-wars" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scala Wars</h3>
 
-<p>There are four projects in this category by now.</p>
-
-<h4>
-<a id="lambek" class="anchor" href="#lambek" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lambek</h4>
-
-<p>My M.Sc. thesis project, at Sharif University of Technology, under supervision of Prof. Mohammad Ardeshir and Assis. Prof. Bahram Vazirnezhad. The thesis title is 'Lambek calculus with applications to German and Persian languages'.</p>
-
-<p>Lambek is a machine translation project named after J. Lambek. The project is a study of pregroup grammar and its capacity of using in an automated translation software.</p>
+<p>This side of the page is dedicated to Scala programming language.</p>
 
 <h4>
-<a id="verblab" class="anchor" href="#verblab" aria-hidden="true"><span class="octicon octicon-link"></span></a>VerbLab</h4>
+<a id="h2h-scala-course-cafebazaar" class="anchor" href="#h2h-scala-course-cafebazaar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H2H Scala Course, CafeBazaar</h4>
 
-<p>Project was proposed to Persian Academy, but because of financial difficulties it never starts. The project was going to be done in Sharif University of Technology under Dr. Bahram Vazirnezhad.</p>
+<p><strong>Exercise 1.</strong>
+What is the problem with this anonymous function?</p>
 
-<p>VerbLab is a research project for creating new words in Modern Persian by using verbs from New Persian, Medieval Persian, and Ancient Persian.</p>
+<div class="highlight highlight-source-scala"><pre><span class="pl-k">val</span> <span class="pl-en">l</span> <span class="pl-k">=</span> (<span class="pl-c1">1</span> to <span class="pl-c1">5</span>).toList
+l foreach { println(_<span class="pl-k">*</span><span class="pl-c1">2</span>) }</pre></div>
 
-<p>I am now developing this project independently, to find another supporter.</p>
+<p><strong>Exercise 2.</strong>
+Write a code in Scala which estimates <code>Pi = 3.14</code>. The code should scan an integer from <code>stdin</code>, which is the number of iterations. Do it with <code>val n = readLine.toInt</code>.
+Use  to compile and test the code, and share the link after you have succeeded.
+You can use <code>scala.util.Random</code> class in your code if you want:</p>
 
-<h4>
-<a id="wordworks" class="anchor" href="#wordworks" aria-hidden="true"><span class="octicon octicon-link"></span></a>WordWorks</h4>
+<div class="highlight highlight-source-scala"><pre><span class="pl-k">import</span> <span class="pl-v">scala.util.</span><span class="pl-v">Random</span>
 
-<p>WordWorks is an ontology translation and visualization project, developed in Mobin IT Research Center, as a part of my military duty.</p>
-
-<h4>
-<a id="tarzaban" class="anchor" href="#tarzaban" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tarzaban</h4>
-
-<p>Tarzaban is a Persian-German translator project, developed as a part of my military service, under supervision of Dr. Farhad Ghadak, as the project manager. The project is a rule-based translator, uses pregroup grammar as the basis, and uses some corpora as well. This project is under development, and is estimated to get finished at the end of 2015.</p>
-
-<h3>
-<a id="software-engineering" class="anchor" href="#software-engineering" aria-hidden="true"><span class="octicon octicon-link"></span></a>Software Engineering</h3>
-
-<p>Projects in this category are aimed to make specific jobs easier using simpler tools.</p>
-
-<h4>
-<a id="skala" class="anchor" href="#skala" aria-hidden="true"><span class="octicon octicon-link"></span></a>Skala</h4>
-
-<p>Extensions for Scala, having Machine Learning libraries, to run ML algorithms locally, the simplest way, with pure Scala.</p>
-
-<div class="highlight highlight-scala"><pre><span class="pl-k">val</span> <span class="pl-en">canopy</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">CanopyDriver</span>(<span class="pl-c1">0.95</span>, <span class="pl-c1">0.5</span>)
-<span class="pl-k">val</span> <span class="pl-en">results</span> <span class="pl-k">=</span> canopy.mergedRun(vectors, <span class="pl-en">KeyedVectors</span>.cosineDist[<span class="pl-st">String</span>])</pre></div>
-
-<h4>
-<a id="azi-dahaka" class="anchor" href="#azi-dahaka" aria-hidden="true"><span class="octicon octicon-link"></span></a>Azi-Dahaka</h4>
-
-<p>Azi-Dahaka is a Java-based project, for distribution computing, and changing the project in the runtime.</p>
-
-<h4>
-<a id="jhooah" class="anchor" href="#jhooah" aria-hidden="true"><span class="octicon octicon-link"></span></a>JHooah</h4>
-
-<p>JHooah is a distributed machine learning project on Java.</p>
+<span class="pl-k">object</span> <span class="pl-en">Main</span> <span class="pl-k">extends</span> <span class="pl-e">App</span> {
+    <span class="pl-k">val</span> <span class="pl-en">r</span> <span class="pl-k">=</span> <span class="pl-en">Random</span>()
+    <span class="pl-k">val</span> <span class="pl-en">n</span> <span class="pl-k">=</span> readLine().toInt
+    ...
+    <span class="pl-k">val</span> <span class="pl-en">someRandomDouble</span> <span class="pl-k">=</span> r.nextDouble()  <span class="pl-c">// generates a double between 0.0 and 1.0</span>
+    ...
+    println(pi)
+}</pre></div>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
